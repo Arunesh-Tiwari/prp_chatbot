@@ -1,0 +1,23 @@
+version: "2.0"
+intents:
+  - add_transaction
+
+actions:
+  - action_add_transaction
+
+entities:
+  - amount
+  - category
+
+slots:
+  amount:
+    type: text
+  category:
+    type: text
+
+responses:
+  utter_ask_amount:
+    - text: "What is the amount of the transaction?"
+
+  utter_ask_category:
+    - text: "What is the category for the transaction?"

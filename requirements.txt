@@ -1,0 +1,4 @@
+rasa-sdk
+cryptography
+stable-baselines3
+gym

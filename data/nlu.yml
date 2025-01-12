@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+  - intent: add_transaction
+    examples: |
+      - Add a transaction of $500 for groceries.
+      - Record $200 under travel.
+      - Log a $50 transaction for entertainment.
