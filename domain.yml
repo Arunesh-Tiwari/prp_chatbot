@@ -1,4 +1,5 @@
-version: "2.0"
+version: "3.0"
+
 intents:
   - add_transaction
 
@@ -12,8 +13,16 @@ entities:
 slots:
   amount:
     type: text
+    mappings:
+      - type: from_text
+        intent: add_transaction
+        value: "{amount}"
   category:
     type: text
+    mappings:
+      - type: from_text
+        intent: add_transaction
+        value: "{category}"
 
 responses:
   utter_ask_amount:

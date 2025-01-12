@@ -1,6 +1,9 @@
-version: "2.0"
 stories:
   - story: Add transaction story
     steps:
       - intent: add_transaction
+      - action: utter_ask_category
+      - intent: provide_category
+      - action: utter_ask_amount
+      - intent: provide_amount
       - action: action_add_transaction
